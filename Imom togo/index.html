@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Business Card</title>
+    <style>
+        body {
+            font-family: "montserrat";
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #fff;
+        }
+
+        .main {
+            display: flex;
+            align-items: center;
+            width: 80%;
+            margin: 0 auto;
+            height: 100vh;
+            max-width: 100%;
+            background-color: #fff;
+        }
+
+        .logo-body {
+            flex: 1 1 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .logo-body img {
+            max-width: 100%;
+            height: auto;
+            max-height: 300px;
+        }
+
+        .doc-body {
+            flex: 1 1 50%;
+            padding: 30px;
+            color: #0099ff;
+        }
+
+        .name-body {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            color: #0099ff;
+        }
+
+        .name-body h1 {
+            font-size: 28px;
+            margin: 0;
+            color: #0099ff;
+        }
+
+        .name-body h3 {
+            font-size: 18px;
+            font-weight: normal;
+            margin: 0;
+            color: #0099ff;
+            position: relative;
+        }
+
+        .name-body h3::before {
+            content: '';
+            width: 1px;
+            height: 100%;
+            background-color: #0099ff;
+            position: absolute;
+            left: -10px;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #0099ff;
+            margin: 15px 0;
+            width: 86%;
+        }
+
+        .sce h1 {
+            margin: 10px 0 15px 0px;
+            font-size: 20px;
+            color: #0099ff;
+        }
+
+        .info-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            color: #0099ff;
+        }
+
+        .info-row img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            border-radius: 50%;
+            filter: invert(27%) sepia(100%) saturate(8000%) hue-rotate(360deg) brightness(95%) contrast(110%);
+        }
+
+        .info-row h4 {
+            margin: 0;
+            font-size: 16px;
+            color: #0099ff;
+            font-weight: normal;
+        }
+
+        .sot-body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .adress-body {
+            color: #0099ff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="logo-body">
+            <img src="./img/logo.jpg" alt="LOGO">
+        </div>
+
+        <div class="doc-body">
+            <div class="name-body">
+                <h1 class="username">Imomali Fayzullayev</h1>
+                <h3 class="employee-position">IT Support specialist</h3>
+            </div>
+            <hr>
+            <div class="sce">
+                <h1 class="company-name">SCE-QUVVAT LLC</h1>
+            </div>
+
+            <div class="number-body info-row">
+                <img src="./icon//mobile.svg" alt="Phone">
+                <h4 class="phone-number">+998974629555</h4>
+            </div>
+
+            <div class="sot-body">
+                <div class="mail-body info-row">
+                    <img src="./icon/email.svg" alt="Email">
+                    <h4 class="email-address">irf@stonecityenergy.com</h4>
+                </div>
+                <div class="site-body info-row">
+                    <img src="./icon/websice.svg" alt="Website">
+                    <h4 class="website">www.stonicityenergy.com</h4>
+                </div>
+            </div>
+
+            <div class="adress-body info-row">
+                <img src="./icon/home.svg" alt="Address">
+                <h4 class="company-addres">10B Qushbegi, Tashkent, Uzbekistan</h4>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
